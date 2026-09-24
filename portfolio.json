@@ -1,0 +1,86 @@
+{
+  "name": "Sandeep Yadav",
+  "location": "Mainpuri, Uttar Pradesh, India",
+  "contact": {
+    "email": "sandeep1912005@gmail.com",
+    "phone": "+91 95289 95224",
+    "linkedin": "LinkedIn profile linked on resume",
+    "github": "GitHub profile linked on resume"
+  },
+  "education": [
+    {
+      "institution": "Galgotias University, Greater Noida, Uttar Pradesh",
+      "degree": "B.Tech in Computer Science and Engineering",
+      "duration": "Oct 2023 - Oct 2027",
+      "cgpa": "7.74 / 10.0"
+    },
+    {
+      "institution": "Dr. Kiran Saujiya Sr. Sec. School",
+      "duration": "2021 - 2023",
+      "details": "Class XII (CBSE): 80% | Class X (CBSE): 89%"
+    }
+  ],
+  "skills": {
+    "languages": ["Java", "Python", "SQL"],
+    "web_and_ui": ["HTML5", "CSS3", "JavaScript", "Bootstrap 5", "Streamlit", "Responsive Design"],
+    "ai_and_ml": ["LLM APIs (Groq)", "Prompt Engineering", "Structured Output Generation", "Pydantic", "scikit-learn", "AWS SageMaker", "spaCy", "NLTK"],
+    "data_and_analysis": ["Pandas", "NumPy", "Matplotlib", "Seaborn", "Plotly", "Data Cleaning", "Exploratory Data Analysis"],
+    "document_processing": ["pypdf", "python-docx"],
+    "tools_and_platforms": ["Git", "GitHub", "Docker", "Postman", "VS Code", "IntelliJ IDEA"],
+    "cs_fundamentals": ["Data Structures & Algorithms", "OOPs", "DBMS", "Operating Systems", "Computer Networks"]
+  },
+  "internship": {
+    "role": "AI-ML Virtual Internship",
+    "organization": "Eduskills (in collaboration with AWS Academy)",
+    "duration": "Jul 2025 - Sep 2025",
+    "highlights": [
+      "Applied supervised and unsupervised machine learning techniques on real-world datasets for model training and evaluation.",
+      "Improved model prediction accuracy by ~15% through feature engineering and hyperparameter tuning using Python and AWS SageMaker."
+    ]
+  },
+  "projects": [
+    {
+      "name": "JobSync",
+      "tagline": "AI Resume Screening & Job Matching Platform",
+      "stack": ["Python", "Streamlit", "Groq LLM API", "Pydantic", "NLP", "pypdf", "python-docx"],
+      "status": "live",
+      "highlights": [
+        "Built a screening tool that ranks multiple candidate resumes against a pasted job description, returning a fit score, matched and missing skills, and a written verdict per candidate.",
+        "Used Pydantic schemas with JSON-mode prompting on Groq so the model always returns typed, validated fields instead of free-form text.",
+        "Parsed resumes in PDF and DOCX with pypdf and python-docx, isolating failures per file and adding retry with backoff so one bad file doesn't break a batch run.",
+        "Built a Streamlit dashboard with dark and light theming, session analytics, and an exportable print-ready report."
+      ]
+    },
+    {
+      "name": "IPL Data Analysis & Visualization",
+      "tagline": "Exploratory data analysis on IPL match and ball-by-ball data",
+      "stack": ["Python", "Pandas", "NumPy", "Matplotlib", "Seaborn", "Plotly"],
+      "status": "complete",
+      "highlights": [
+        "Cleaned and merged 756 IPL matches and 179,000+ ball-by-ball records (2008-2019), handling missing values and standardizing team names across seasons.",
+        "Used the IQR method to flag outliers, then found patterns in top scorers, wicket-takers, and team scoring across overs.",
+        "Built 10+ visualizations in Seaborn and Plotly covering powerplay and death-over trends, toss impact, and venue and season patterns."
+      ]
+    },
+    {
+      "name": "AutoElite",
+      "tagline": "Premium Car Store Web Application",
+      "stack": ["HTML5", "CSS3", "Bootstrap 5", "JavaScript"],
+      "status": "complete",
+      "highlights": [
+        "Built a responsive car dealership site with real-time search, multi-criteria filtering, sorting, and a favorites shortlist over a structured JS dataset.",
+        "Wrote event-driven JavaScript for dynamic card rendering and a modal login flow, keeping markup, styling, and logic in separate files."
+      ]
+    }
+  ],
+  "achievements_and_activities": [
+    "Regularly solves Data Structures & Algorithms problems on LeetCode, GeeksforGeeks, and HackerRank.",
+    "Participant in GirlScript Summer of Code (GSSoC) 2024, collaborated on open-source projects using Git-based workflows."
+  ],
+  "not_yet_available": [
+    "Kubernetes",
+    "Cloud platforms beyond AWS SageMaker usage in one internship",
+    "Full-time or paid professional work experience beyond internships",
+    "Backend frameworks beyond Flask and Streamlit's built-in server"
+  ]
+}
