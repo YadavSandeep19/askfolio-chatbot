@@ -3,9 +3,14 @@
   "location": "Mainpuri, Uttar Pradesh, India",
   "contact": {
     "email": "sandeep1912005@gmail.com",
-    "phone": "+91 95289 95224",
-    "linkedin": "LinkedIn profile linked on resume",
-    "github": "GitHub profile linked on resume"
+    "phone": "+91 95289 95224"
+  },
+  "links": {
+    "resume": "https://drive.google.com/file/d/1TwE2yBzVWQxO4sZ374R1BZx25A2XYAo5/view?usp=sharing",
+    "github": "https://github.com/YadavSandeep19",
+    "linkedin": "https://www.linkedin.com/in/sandeep-yadav-8974b327b",
+    "leetcode": "https://leetcode.com/u/Sandeep_75/",
+    "codolio": "https://codolio.com/profile/sandeep_yadav"
   },
   "education": [
     {
@@ -22,32 +27,52 @@
   ],
   "skills": {
     "languages": ["Java", "Python", "SQL"],
-    "web_and_ui": ["HTML5", "CSS3", "JavaScript", "Bootstrap 5", "Streamlit", "Responsive Design"],
-    "ai_and_ml": ["LLM APIs (Groq)", "Prompt Engineering", "Structured Output Generation", "Pydantic", "scikit-learn", "AWS SageMaker", "spaCy", "NLTK"],
-    "data_and_analysis": ["Pandas", "NumPy", "Matplotlib", "Seaborn", "Plotly", "Data Cleaning", "Exploratory Data Analysis"],
+    "web_and_ui": ["HTML5", "CSS3", "JavaScript", "Bootstrap 5", "Streamlit"],
+    "ai_and_ml": ["LLM APIs (Groq)", "Prompt Engineering", "Structured Output Generation", "Pydantic", "scikit-learn", "AWS SageMaker"],
+    "data_and_analysis": ["Pandas", "NumPy", "Matplotlib", "Seaborn", "Plotly", "Exploratory Data Analysis"],
     "document_processing": ["pypdf", "python-docx"],
-    "tools_and_platforms": ["Git", "GitHub", "Docker", "Postman", "VS Code", "IntelliJ IDEA"],
-    "cs_fundamentals": ["Data Structures & Algorithms", "OOPs", "DBMS", "Operating Systems", "Computer Networks"]
+    "tools_and_practices": ["Git", "GitHub", "Docker", "Postman", "VS Code", "IntelliJ IDEA", "Streamlit Community Cloud", "Jira", "Agile/Scrum", "Sprint Planning"],
+    "cs_fundamentals": ["Data Structures & Algorithms", "OOPs", "DBMS", "Operating Systems"]
   },
   "internship": {
     "role": "AI-ML Virtual Internship",
     "organization": "Eduskills (in collaboration with AWS Academy)",
     "duration": "Jul 2025 - Sep 2025",
+    "certificate": "https://drive.google.com/file/d/1YSQ92MfHwn_uDtcQwVabmgAxuCN_MbaD/view?usp=sharing",
     "highlights": [
-      "Applied supervised and unsupervised machine learning techniques on real-world datasets for model training and evaluation.",
-      "Improved model prediction accuracy by ~15% through feature engineering and hyperparameter tuning using Python and AWS SageMaker."
+      "Trained and evaluated supervised and unsupervised models on real datasets as part of a structured AWS Academy track.",
+      "Raised prediction accuracy by about 15% through feature engineering and hyperparameter tuning in Python and AWS SageMaker."
     ]
   },
   "projects": [
+    {
+      "name": "Askfolio",
+      "tagline": "Portfolio Chatbot for Recruiters",
+      "stack": ["Python", "Streamlit", "Groq LLM API", "Pydantic", "pypdf", "python-docx"],
+      "status": "live",
+      "links": {
+        "live_demo": "https://askfolio.streamlit.app/",
+        "source_code": "https://github.com/YadavSandeep19/askfolio-chatbot"
+      },
+      "highlights": [
+        "Built a streaming chat app where recruiters ask about Sandeep's background and get answers drawn only from a portfolio data file, deployed on Streamlit Community Cloud.",
+        "Wrote refusal rules into the system prompt so the model says it has no information rather than guessing, and tested it against skills and employers absent from the data.",
+        "Kept all portfolio content in a runtime-read JSON file and split UI from model logic, so updating experience needs no code change; capped response tokens and history length to control usage on a public endpoint."
+      ]
+    },
     {
       "name": "JobSync",
       "tagline": "AI Resume Screening & Job Matching Platform",
       "stack": ["Python", "Streamlit", "Groq LLM API", "Pydantic", "NLP", "pypdf", "python-docx"],
       "status": "live",
+      "links": {
+        "live_demo": "https://jobsync-ai.streamlit.app/",
+        "source_code": "https://github.com/YadavSandeep19/JOBSYNC"
+      },
       "highlights": [
         "Built a screening tool that ranks multiple candidate resumes against a pasted job description, returning a fit score, matched and missing skills, and a written verdict per candidate.",
-        "Used Pydantic schemas with JSON-mode prompting on Groq so the model always returns typed, validated fields instead of free-form text.",
-        "Parsed resumes in PDF and DOCX with pypdf and python-docx, isolating failures per file and adding retry with backoff so one bad file doesn't break a batch run.",
+        "Used Pydantic schemas with JSON-mode prompting on Groq so the model returns typed, validated fields instead of free-form text.",
+        "Parsed PDF and DOCX resumes with pypdf and python-docx, isolating failures per file and adding retry with backoff so one bad file never breaks a batch run.",
         "Built a Streamlit dashboard with dark and light theming, session analytics, and an exportable print-ready report."
       ]
     },
@@ -56,10 +81,13 @@
       "tagline": "Exploratory data analysis on IPL match and ball-by-ball data",
       "stack": ["Python", "Pandas", "NumPy", "Matplotlib", "Seaborn", "Plotly"],
       "status": "complete",
+      "links": {
+        "source_code": "https://github.com/YadavSandeep19/IPL-Data-Analysis"
+      },
       "highlights": [
-        "Cleaned and merged 756 IPL matches and 179,000+ ball-by-ball records (2008-2019), handling missing values and standardizing team names across seasons.",
-        "Used the IQR method to flag outliers, then found patterns in top scorers, wicket-takers, and team scoring across overs.",
-        "Built 10+ visualizations in Seaborn and Plotly covering powerplay and death-over trends, toss impact, and venue and season patterns."
+        "Cleaned and merged 756 IPL matches and 179,000+ ball-by-ball records from 2008 to 2019, handling missing values and standardizing team names across seasons.",
+        "Flagged outliers with the IQR method, then pulled out patterns in top scorers, wicket-takers, and team scoring across overs.",
+        "Built 10+ Seaborn and Plotly visualizations covering powerplay and death-over trends, toss impact, and venue and season patterns."
       ]
     },
     {
@@ -74,13 +102,14 @@
     }
   ],
   "achievements_and_activities": [
-    "Regularly solves Data Structures & Algorithms problems on LeetCode, GeeksforGeeks, and HackerRank.",
-    "Participant in GirlScript Summer of Code (GSSoC) 2024, collaborated on open-source projects using Git-based workflows."
+    "Solves Data Structures and Algorithms problems regularly on LeetCode, GeeksforGeeks, CodeChef, Codeforces, and HackerRank.",
+    "Participant in GirlScript Summer of Code 2024, working on open-source repositories through Git-based workflows."
   ],
   "not_yet_available": [
     "Kubernetes",
     "Cloud platforms beyond AWS SageMaker usage in one internship",
     "Full-time or paid professional work experience beyond internships",
-    "Backend frameworks beyond Flask and Streamlit's built-in server"
+    "Backend frameworks beyond Streamlit's built-in server",
+    "Frontend frameworks such as React, Angular, or Vue"
   ]
 }
